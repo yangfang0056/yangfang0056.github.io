@@ -17,7 +17,4 @@ main:
     url: /portfolio/
   - title: "联系方式"
     url: /contact/
-  - title: "CV"
-    url: /cv/
-  - title: "如何更新网站"
-    url: /how-to-update/
+

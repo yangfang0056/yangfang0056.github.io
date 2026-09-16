@@ -9,6 +9,14 @@
 main:
   - title: "关于我"
     url: /
+  - title: "兴趣爱好"
+    url: /interest/
+  - title: "实习经历"
+    url: /experience/
+  - title: "作品集"
+    url: /portfolio/
+  - title: "联系方式"
+    url: /contact/
   - title: "CV"
     url: /cv/
   - title: "如何更新网站"

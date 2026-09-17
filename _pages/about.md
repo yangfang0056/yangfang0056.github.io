@@ -1,6 +1,7 @@
 ---
-layout: single
+layout: page
 title: "关于我"
+permalink: /about/
 author_profile: true
 ---
 

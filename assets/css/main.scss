@@ -3,17 +3,7 @@
 
 @import "primer";
 
-body {
-  background:
-    linear-gradient(
-      135deg,
-      #f7f3f0 0%,
-      #eef7f2 50%,
-      #f8f5f1 100%
-    );
 
-  color: #2f3542;
-}
 /*
  * This file controls what is imported from /_sass
  *
@@ -181,4 +171,18 @@ body {
     font-size: 14px;
   }
 
+}
+
+/* homepage background */
+
+body {
+  background:
+    linear-gradient(
+      135deg,
+      #f7f3f0 0%,
+      #eef7f2 50%,
+      #f8f5f1 100%
+    ) !important;
+
+  color: #2f3542 !important;
 }

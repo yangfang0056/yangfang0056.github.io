@@ -6,6 +6,11 @@ author_profile: false
 ---
 
 {% include base_path %}
-{% for post in site.pages %}
-  {% include archive-single.html %}
+
+{% assign pages_list = site.pages | where_exp: "item", "item.title" %}
+
+{% for post in pages_list %}
+  {% unless post.url == page.url %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}

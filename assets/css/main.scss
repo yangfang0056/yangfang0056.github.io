@@ -1,6 +1,30 @@
 ---
 ---
 
+@import "minimal-mistakes";
+
+
+body {
+  background-color: #faf8f5;
+  color: #2f3542;
+}
+
+
+body {
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(231, 244, 237, 0.65),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(250, 231, 235, 0.55),
+      transparent 40%
+    ),
+    #faf8f5;
+}
+
 /*
  * This file controls what is imported from /_sass
  *

@@ -1,39 +1,91 @@
----
-permalink: /
-title: "杨芳 Yang Fang"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
+<div class="hero-section">
 
-# 你好，我是杨芳 👋
 
-我是**南京大学新闻传播学院**的本科生，正在学习计算传播学，对"用数据理解传播"这件事充满好奇。
+<div class="hero-container">
 
-## 关于我
 
-我目前就读于南京大学新闻传播学院，主修新闻传播学。在课堂上，我第一次接触到计算传播学——用大规模数据和计算方法来研究人类传播行为，这门课让我意识到，传播学正在经历一场"计算转向"：社交媒体上的海量用户行为、新闻传播的网络结构、舆论的形成与扩散，都可以用数据和算法来刻画、分析和理解。
+<!-- 左侧文字 -->
 
-我喜欢把传播理论和编程实践结合起来，正在学习 Python、数据分析和网络爬虫等工具，希望未来能够用计算的方法研究真实的传播现象。
+<div class="hero-text">
 
-## 教育经历
 
-- **南京大学**，新闻传播学院，新闻传播学（本科在读）
-  - 当前课程：计算传播学导论（授课教师：王成军教授）
+<p class="hero-label">
+DIGITAL COMMUNICATION · MARKETING · CONTENT
+</p>
 
-## 研究兴趣
 
-- **计算传播学**：用大数据和计算方法研究传播现象
-- **数据新闻**：用数据讲好新闻故事
-- **社交媒体分析**：网络结构、用户行为与舆论传播
-- **信息可视化**：让复杂的数据变得直观可读
+<h1>
+杨芳
+<span>
+Yang Fang
+</span>
+</h1>
 
-## 最新动态
 
-- **2026.09**：开始学习《计算传播学导论》课程，并搭建自己的个人学术主页（也就是这个网站！）
-- **2026.09**：注册 GitHub 账号 [yangfang0056](https://github.com/yangfang0056)，学习用 Git 和 GitHub Pages 管理网站
 
----
+<h2>
+Digital Communication
+<br>
+& Marketing Portfolio
+</h2>
 
-*本网站基于 [Academic Pages](https://github.com/academicpages/academicpages.github.io) 模板搭建，托管于 GitHub Pages。*
+
+
+<p class="hero-description">
+
+南京大学新闻传播学院研究生，
+专注数字营销、内容策略与用户增长。
+通过数据分析与创意内容，
+探索品牌传播与用户连接的新方式。
+
+</p>
+
+
+
+<div class="hero-buttons">
+
+<a href="/portfolio/" 
+class="hero-button primary">
+
+View Projects →
+
+</a>
+
+
+<a href="/experience/" 
+class="hero-button secondary">
+
+Experience
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- 右侧头像 -->
+
+<div class="hero-image">
+
+
+<div class="image-frame">
+
+<img src="/assets/images/profile.jpg"
+alt="Yang Fang">
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>

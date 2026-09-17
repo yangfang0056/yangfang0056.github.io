@@ -150,7 +150,7 @@ document.getElementById(
 
 
 /* ================================
-   大图区域
+   上方大图
    ================================ */
 
 .photography-preview {
@@ -179,12 +179,12 @@ document.getElementById(
 
   opacity: 1;
 
-  transition: opacity 0.2s ease;
+  transition: opacity 0.25s ease;
 }
 
 
 /* ================================
-   胶片外层
+   胶片容器
    ================================ */
 
 .photography-film-wrapper {
@@ -206,11 +206,9 @@ document.getElementById(
 .photography-film {
 
   width: max-content;
-
   min-width: 100%;
 
   display: flex;
-
   align-items: center;
 
   padding: 32px 45px;
@@ -271,7 +269,7 @@ document.getElementById(
 
 
 /* ================================
-   单张胶片
+   单张胶片照片
    ================================ */
 
 .photography-frame {
@@ -324,7 +322,7 @@ document.getElementById(
 }
 
 
-/* 其他照片稍微变淡 */
+/* 其他照片变淡 */
 
 .photography-film:hover
 .photography-frame:not(:hover) {
@@ -334,7 +332,7 @@ document.getElementById(
 
 
 /* ================================
-   编号
+   照片编号
    ================================ */
 
 .photography-number {
@@ -386,19 +384,16 @@ document.getElementById(
     margin-top: 70px;
 
     padding-top: 40px;
-
   }
 
   .photography-section h2 {
 
     font-size: 30px;
-
   }
 
   .photography-preview {
 
     width: 90%;
-
   }
 
   .photography-frame {
@@ -406,7 +401,6 @@ document.getElementById(
     width: 120px;
 
     height: 82px;
-
   }
 
 }
@@ -428,14 +422,14 @@ document.getElementById(
 
 
   <!-- ================================
-       大图
+       上方大图
        ================================ -->
 
   <div class="photography-preview">
 
     <img
       id="photography-large-image"
-      src="/assets/images/pho1.jpg"
+      src="/assets/images/photography/pho1.jpg"
       alt="Photography"
     >
 
@@ -451,15 +445,17 @@ document.getElementById(
     <div class="photography-film">
 
 
-      <!-- Photo 01 -->
+      <!-- =========================
+           Photo 01
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho1.jpg"
+        data-photo="/assets/images/photography/pho1.jpg"
       >
 
         <img
-          src="/assets/images/pho1.jpg"
+          src="/assets/images/photography/pho1.jpg"
           alt="Photography 01"
         >
 
@@ -470,15 +466,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 02 -->
+      <!-- =========================
+           Photo 02
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho2.jpg"
+        data-photo="/assets/images/photography/pho2.jpg"
       >
 
         <img
-          src="/assets/images/pho2.jpg"
+          src="/assets/images/photography/pho2.jpg"
           alt="Photography 02"
         >
 
@@ -489,15 +487,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 03 -->
+      <!-- =========================
+           Photo 03
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho3.jpg"
+        data-photo="/assets/images/photography/pho3.jpg"
       >
 
         <img
-          src="/assets/images/pho3.jpg"
+          src="/assets/images/photography/pho3.jpg"
           alt="Photography 03"
         >
 
@@ -508,15 +508,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 04 -->
+      <!-- =========================
+           Photo 04
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho4.jpg"
+        data-photo="/assets/images/photography/pho4.jpg"
       >
 
         <img
-          src="/assets/images/pho4.jpg"
+          src="/assets/images/photography/pho4.jpg"
           alt="Photography 04"
         >
 
@@ -527,15 +529,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 05 -->
+      <!-- =========================
+           Photo 05
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho5.jpg"
+        data-photo="/assets/images/photography/pho5.jpg"
       >
 
         <img
-          src="/assets/images/pho5.jpg"
+          src="/assets/images/photography/pho5.jpg"
           alt="Photography 05"
         >
 
@@ -546,15 +550,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 06 -->
+      <!-- =========================
+           Photo 06
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho6.jpg"
+        data-photo="/assets/images/photography/pho6.jpg"
       >
 
         <img
-          src="/assets/images/pho6.jpg"
+          src="/assets/images/photography/pho6.jpg"
           alt="Photography 06"
         >
 
@@ -565,15 +571,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 07 -->
+      <!-- =========================
+           Photo 07
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho7.jpg"
+        data-photo="/assets/images/photography/pho7.jpg"
       >
 
         <img
-          src="/assets/images/pho7.jpg"
+          src="/assets/images/photography/pho7.jpg"
           alt="Photography 07"
         >
 
@@ -584,15 +592,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 08 -->
+      <!-- =========================
+           Photo 08
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho8.jpg"
+        data-photo="/assets/images/photography/pho8.jpg"
       >
 
         <img
-          src="/assets/images/pho8.jpg"
+          src="/assets/images/photography/pho8.jpg"
           alt="Photography 08"
         >
 
@@ -603,15 +613,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 09 -->
+      <!-- =========================
+           Photo 09
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho9.jpg"
+        data-photo="/assets/images/photography/pho9.jpg"
       >
 
         <img
-          src="/assets/images/pho9.jpg"
+          src="/assets/images/photography/pho9.jpg"
           alt="Photography 09"
         >
 
@@ -622,15 +634,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 10 -->
+      <!-- =========================
+           Photo 10
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho10.jpg"
+        data-photo="/assets/images/photography/pho10.jpg"
       >
 
         <img
-          src="/assets/images/pho10.jpg"
+          src="/assets/images/photography/pho10.jpg"
           alt="Photography 10"
         >
 
@@ -641,15 +655,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 11 -->
+      <!-- =========================
+           Photo 11
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho11.jpg"
+        data-photo="/assets/images/photography/pho11.jpg"
       >
 
         <img
-          src="/assets/images/pho11.jpg"
+          src="/assets/images/photography/pho11.jpg"
           alt="Photography 11"
         >
 
@@ -660,15 +676,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 12 -->
+      <!-- =========================
+           Photo 12
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho12.jpg"
+        data-photo="/assets/images/photography/pho12.jpg"
       >
 
         <img
-          src="/assets/images/pho12.jpg"
+          src="/assets/images/photography/pho12.jpg"
           alt="Photography 12"
         >
 
@@ -679,15 +697,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 13 -->
+      <!-- =========================
+           Photo 13
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho13.jpg"
+        data-photo="/assets/images/photography/pho13.jpg"
       >
 
         <img
-          src="/assets/images/pho13.jpg"
+          src="/assets/images/photography/pho13.jpg"
           alt="Photography 13"
         >
 
@@ -698,15 +718,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 14 -->
+      <!-- =========================
+           Photo 14
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho14.jpg"
+        data-photo="/assets/images/photography/pho14.jpg"
       >
 
         <img
-          src="/assets/images/pho14.jpg"
+          src="/assets/images/photography/pho14.jpg"
           alt="Photography 14"
         >
 
@@ -717,15 +739,17 @@ document.getElementById(
       </div>
 
 
-      <!-- Photo 15 -->
+      <!-- =========================
+           Photo 15
+           ========================= -->
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/pho15.jpg"
+        data-photo="/assets/images/photography/pho15.jpg"
       >
 
         <img
-          src="/assets/images/pho15.jpg"
+          src="/assets/images/photography/pho15.jpg"
           alt="Photography 15"
         >
 
@@ -776,7 +800,16 @@ document
         return;
       }
 
+      /*
+       * 先淡出
+       */
+
       largeImage.style.opacity = '0';
+
+
+      /*
+       * 切换图片
+       */
 
       setTimeout(function() {
 

@@ -37,3 +37,135 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+/* ========================================
+   Experience Page - Company Logo + Info
+   ======================================== */
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+/* 左侧公司 Logo */
+
+.experience-logo {
+  width: 180px;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+
+/* 右侧实习信息 */
+
+.experience-content {
+  flex: 1;
+}
+
+
+/* 公司名称 + 时间 */
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.experience-header h2 {
+  margin: 0 0 6px 0;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.experience-date {
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+
+/* 数据标签 */
+
+.experience-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.experience-stats span {
+  padding: 6px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+
+/* 工作内容 */
+
+.experience-content h4 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.experience-content ol {
+  margin-top: 0;
+  padding-left: 22px;
+}
+
+.experience-content li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   手机端适配
+   ======================================== */
+
+@media screen and (max-width: 700px) {
+
+  .experience-item {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .experience-logo {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .experience-logo img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .experience-date {
+    font-size: 14px;
+  }
+
+}

@@ -120,13 +120,15 @@ document.getElementById(
 
 </script>
 
-</div>
-
 <!-- ================================
      Photography
      ================================ -->
 
 <style>
+
+/* ================================
+   Photography 整体
+   ================================ */
 
 .photography-section {
   margin-top: 100px;
@@ -148,7 +150,7 @@ document.getElementById(
 
 
 /* ================================
-   大图
+   大图区域
    ================================ */
 
 .photography-preview {
@@ -177,16 +179,15 @@ document.getElementById(
 
   opacity: 1;
 
-  transition: opacity 0.25s ease;
+  transition: opacity 0.2s ease;
 }
 
 
 /* ================================
-   胶片
+   胶片外层
    ================================ */
 
 .photography-film-wrapper {
-
   width: 100%;
 
   overflow-x: auto;
@@ -194,10 +195,13 @@ document.getElementById(
 
   padding: 25px 0 40px;
 
+  scrollbar-width: thin;
 }
 
 
-/* 胶片主体 */
+/* ================================
+   胶片主体
+   ================================ */
 
 .photography-film {
 
@@ -219,12 +223,11 @@ document.getElementById(
 
   box-shadow:
     0 10px 30px rgba(0,0,0,0.08);
-
 }
 
 
 /* ================================
-   胶片齿孔
+   胶片上下齿孔
    ================================ */
 
 .photography-film::before,
@@ -250,30 +253,25 @@ document.getElementById(
   background-size: 26px 12px;
 
   background-repeat: repeat-x;
-
 }
 
 
-/* 上面的齿孔 */
+/* 上方齿孔 */
 
 .photography-film::before {
-
   top: 5px;
-
 }
 
 
-/* 下面的齿孔 */
+/* 下方齿孔 */
 
 .photography-film::after {
-
   bottom: 5px;
-
 }
 
 
 /* ================================
-   单张照片
+   单张胶片
    ================================ */
 
 .photography-frame {
@@ -298,7 +296,6 @@ document.getElementById(
   transition:
     transform 0.25s ease,
     opacity 0.25s ease;
-
 }
 
 
@@ -312,7 +309,6 @@ document.getElementById(
   object-fit: cover;
 
   display: block;
-
 }
 
 
@@ -325,7 +321,6 @@ document.getElementById(
   transform: translateY(-7px);
 
   z-index: 5;
-
 }
 
 
@@ -335,7 +330,6 @@ document.getElementById(
 .photography-frame:not(:hover) {
 
   opacity: 0.65;
-
 }
 
 
@@ -360,7 +354,6 @@ document.getElementById(
   letter-spacing: 1px;
 
   white-space: nowrap;
-
 }
 
 
@@ -379,7 +372,6 @@ document.getElementById(
   font-size: 13px;
 
   letter-spacing: 2px;
-
 }
 
 
@@ -422,6 +414,10 @@ document.getElementById(
 </style>
 
 
+<!-- ================================
+     Photography 内容
+     ================================ -->
+
 <section class="photography-section">
 
   <h2>Photography</h2>
@@ -432,14 +428,14 @@ document.getElementById(
 
 
   <!-- ================================
-       大图显示
+       大图
        ================================ -->
 
   <div class="photography-preview">
 
     <img
       id="photography-large-image"
-      src="/assets/images/photography/photo1.jpg"
+      src="/assets/images/pho1.jpg"
       alt="Photography"
     >
 
@@ -459,11 +455,11 @@ document.getElementById(
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/photography/photo1.jpg"
+        data-photo="/assets/images/pho1.jpg"
       >
 
         <img
-          src="/assets/images/photography/photo1.jpg"
+          src="/assets/images/pho1.jpg"
           alt="Photography 01"
         >
 
@@ -478,11 +474,11 @@ document.getElementById(
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/photography/photo2.jpg"
+        data-photo="/assets/images/pho2.jpg"
       >
 
         <img
-          src="/assets/images/photography/photo2.jpg"
+          src="/assets/images/pho2.jpg"
           alt="Photography 02"
         >
 
@@ -497,11 +493,11 @@ document.getElementById(
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/photography/photo3.jpg"
+        data-photo="/assets/images/pho3.jpg"
       >
 
         <img
-          src="/assets/images/photography/photo3.jpg"
+          src="/assets/images/pho3.jpg"
           alt="Photography 03"
         >
 
@@ -516,11 +512,11 @@ document.getElementById(
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/photography/photo4.jpg"
+        data-photo="/assets/images/pho4.jpg"
       >
 
         <img
-          src="/assets/images/photography/photo4.jpg"
+          src="/assets/images/pho4.jpg"
           alt="Photography 04"
         >
 
@@ -535,11 +531,11 @@ document.getElementById(
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/photography/photo5.jpg"
+        data-photo="/assets/images/pho5.jpg"
       >
 
         <img
-          src="/assets/images/photography/photo5.jpg"
+          src="/assets/images/pho5.jpg"
           alt="Photography 05"
         >
 
@@ -554,11 +550,11 @@ document.getElementById(
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/photography/photo6.jpg"
+        data-photo="/assets/images/pho6.jpg"
       >
 
         <img
-          src="/assets/images/photography/photo6.jpg"
+          src="/assets/images/pho6.jpg"
           alt="Photography 06"
         >
 
@@ -573,11 +569,11 @@ document.getElementById(
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/photography/photo7.jpg"
+        data-photo="/assets/images/pho7.jpg"
       >
 
         <img
-          src="/assets/images/photography/photo7.jpg"
+          src="/assets/images/pho7.jpg"
           alt="Photography 07"
         >
 
@@ -592,11 +588,11 @@ document.getElementById(
 
       <div
         class="photography-frame"
-        data-photo="/assets/images/photography/photo8.jpg"
+        data-photo="/assets/images/pho8.jpg"
       >
 
         <img
-          src="/assets/images/photography/photo8.jpg"
+          src="/assets/images/pho8.jpg"
           alt="Photography 08"
         >
 
@@ -607,10 +603,147 @@ document.getElementById(
       </div>
 
 
+      <!-- Photo 09 -->
+
+      <div
+        class="photography-frame"
+        data-photo="/assets/images/pho9.jpg"
+      >
+
+        <img
+          src="/assets/images/pho9.jpg"
+          alt="Photography 09"
+        >
+
+        <span class="photography-number">
+          09
+        </span>
+
+      </div>
+
+
+      <!-- Photo 10 -->
+
+      <div
+        class="photography-frame"
+        data-photo="/assets/images/pho10.jpg"
+      >
+
+        <img
+          src="/assets/images/pho10.jpg"
+          alt="Photography 10"
+        >
+
+        <span class="photography-number">
+          10
+        </span>
+
+      </div>
+
+
+      <!-- Photo 11 -->
+
+      <div
+        class="photography-frame"
+        data-photo="/assets/images/pho11.jpg"
+      >
+
+        <img
+          src="/assets/images/pho11.jpg"
+          alt="Photography 11"
+        >
+
+        <span class="photography-number">
+          11
+        </span>
+
+      </div>
+
+
+      <!-- Photo 12 -->
+
+      <div
+        class="photography-frame"
+        data-photo="/assets/images/pho12.jpg"
+      >
+
+        <img
+          src="/assets/images/pho12.jpg"
+          alt="Photography 12"
+        >
+
+        <span class="photography-number">
+          12
+        </span>
+
+      </div>
+
+
+      <!-- Photo 13 -->
+
+      <div
+        class="photography-frame"
+        data-photo="/assets/images/pho13.jpg"
+      >
+
+        <img
+          src="/assets/images/pho13.jpg"
+          alt="Photography 13"
+        >
+
+        <span class="photography-number">
+          13
+        </span>
+
+      </div>
+
+
+      <!-- Photo 14 -->
+
+      <div
+        class="photography-frame"
+        data-photo="/assets/images/pho14.jpg"
+      >
+
+        <img
+          src="/assets/images/pho14.jpg"
+          alt="Photography 14"
+        >
+
+        <span class="photography-number">
+          14
+        </span>
+
+      </div>
+
+
+      <!-- Photo 15 -->
+
+      <div
+        class="photography-frame"
+        data-photo="/assets/images/pho15.jpg"
+      >
+
+        <img
+          src="/assets/images/pho15.jpg"
+          alt="Photography 15"
+        >
+
+        <span class="photography-number">
+          15
+        </span>
+
+      </div>
+
+
     </div>
 
   </div>
 
+
+  <!-- ================================
+       底部文字
+       ================================ -->
 
   <div class="photography-caption">
     Light · Place · Moment
@@ -618,6 +751,10 @@ document.getElementById(
 
 </section>
 
+
+<!-- ================================
+     鼠标经过切换大图
+     ================================ -->
 
 <script>
 

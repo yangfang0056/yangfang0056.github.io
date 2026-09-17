@@ -154,26 +154,29 @@ document.getElementById(
    ================================ */
 
 .photography-preview {
-  width: 62%;
-  max-width: 850px;
-  aspect-ratio: 3 / 2;
+  width: 85%;
+  max-width: none;
+
+  /* 摄影照片比例：2:1 */
+  aspect-ratio: 2 / 1;
 
   margin: 0 auto 55px;
-
-  background: #f4f2ee;
 
   overflow: hidden;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: transparent;
 }
 
 .photography-preview img {
   width: 100%;
   height: 100%;
 
-  object-fit: contain;
+  /* 图片本身就是 2:1，因此完整铺满 */
+  object-fit: cover;
 
   display: block;
 
@@ -181,7 +184,6 @@ document.getElementById(
 
   transition: opacity 0.25s ease;
 }
-
 
 /* ================================
    胶片容器

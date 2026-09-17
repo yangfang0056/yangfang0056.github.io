@@ -1,3 +1,9 @@
+---
+layout: single
+title: "关于我"
+author_profile: true
+---
+
 <div class="hero-section">
 
 

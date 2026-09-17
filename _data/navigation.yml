@@ -8,7 +8,7 @@
 #      Markdown formatted page while the second is generated using JSON.
 main:
   - title: "关于我"
-    url: /
+    url: /about/
   - title: "兴趣爱好"
     url: /interest/
   - title: "实习经历"

@@ -201,3 +201,59 @@ body {
 
   color: #38404a;
 }
+/* Interest Cards */
+
+.interest-section {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+
+.interest-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+
+.interest-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+
+.interest-card {
+  flex: 1;
+  min-width: 220px;
+
+  padding: 28px;
+
+  background: rgba(255,255,255,0.55);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(120,140,120,0.08);
+
+  backdrop-filter: blur(10px);
+
+  transition: transform 0.3s ease;
+}
+
+
+.interest-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.interest-card h3 {
+  margin-top:0;
+  font-size:22px;
+}
+
+
+.interest-card p {
+  line-height:1.8;
+  color:#5b6570;
+}

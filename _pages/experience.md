@@ -1,10 +1,9 @@
 ---
 permalink: /experience/
-title: /
+title: "实习经历"
 author_profile: true
 ---
 
-# 实习经历
 
 <div class="experience-item">
 
@@ -28,7 +27,7 @@ author_profile: true
     <div class="experience-stats">
       <span>ROI 最高 2.6</span>
       <span>点击量 2.6w+</span>
-      <span>累计投放 4302 元</span>
+      <span>总成交量1500+</span>
     </div>
 
     <h4>工作内容</h4>

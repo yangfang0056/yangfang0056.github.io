@@ -1,6 +1,6 @@
 ---
 permalink: /experience/
-title: "实习经历"
+title: /
 author_profile: true
 ---
 

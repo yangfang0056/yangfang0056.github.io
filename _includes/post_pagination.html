@@ -1,16 +1,17 @@
 {% include base_path %}
 
-{% if page.previous or page.next %}
+{% assign prev_url = page.prev_url %}
+{% assign next_url = page.next_url %}
+{% if page.prev_url == nil %}{% if page.previous %}{% assign prev_url = page.previous.url %}{% endif %}{% endif %}
+{% if page.next_url == nil %}{% if page.next %}{% assign next_url = page.next.url %}{% endif %}{% endif %}
+
+{% if prev_url or next_url %}
   <nav class="pagination">
-    {% if page.previous %}
-      <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
-    {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% if prev_url %}
+      <a href="{{ base_path }}{{ prev_url }}" class="pagination--pager">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% endif %}
-    {% if page.next %}
-      <a href="{{ base_path }}{{ page.next.url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
-    {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% if next_url %}
+      <a href="{{ base_path }}{{ next_url }}" class="pagination--pager">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% endif %}
   </nav>
 {% endif %}

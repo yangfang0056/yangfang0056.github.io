@@ -3,7 +3,7 @@ permalink: /contact/
 title: "联系方式"
 author_profile: true
 prev_url: /portfolio/
-next_url: ""
+next_url: none
 ---
 
 

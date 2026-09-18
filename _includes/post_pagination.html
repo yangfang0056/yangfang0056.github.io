@@ -2,15 +2,15 @@
 
 {% assign prev_url = page.prev_url %}
 {% assign next_url = page.next_url %}
-{% if page.prev_url == nil %}{% if page.previous %}{% assign prev_url = page.previous.url %}{% endif %}{% endif %}
-{% if page.next_url == nil %}{% if page.next %}{% assign next_url = page.next.url %}{% endif %}{% endif %}
+{% if page.prev_url == nil and page.previous %}{% assign prev_url = page.previous.url %}{% endif %}
+{% if page.next_url == nil and page.next %}{% assign next_url = page.next.url %}{% endif %}
 
 {% if prev_url or next_url %}
   <nav class="pagination">
-    {% if prev_url %}
+    {% if prev_url and prev_url != "none" %}
       <a href="{{ base_path }}{{ prev_url }}" class="pagination--pager">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% endif %}
-    {% if next_url %}
+    {% if next_url and next_url != "none" %}
       <a href="{{ base_path }}{{ next_url }}" class="pagination--pager">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% endif %}
   </nav>
